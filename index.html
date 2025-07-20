@@ -2,31 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kai Li</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Top Navigation Bar -->
+  <header class="top-nav">
+    <nav class="nav-links">
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#teaching">Teaching & Mentoring</a>
+    </nav>
+  </header>
+
+  <!-- Main container: Sidebar left + Content right -->
   <div class="container">
-    <!-- Sidebar with Image and Social Links -->
-    <div class="sidebar">
-      <img src="images/profile.jpeg" alt="Kai Li" />
+    <!-- Left Sidebar: picture + socials -->
+    <aside class="sidebar">
+      <img src="images/profile.jpeg" alt="Kai Li" class="profile-pic" />
+      <div class="social-links">
+        <a href="mailto:kaili.2001@hotmail.de">Email</a>
+        <!-- <a href="https://github.com/SumoPikmin" target="_blank">GitHub</a> -->
+        <a href="https://www.linkedin.com/in/kai-li-cs/" target="_blank">LinkedIn</a>
+        <a href="Kai_CV.pdf" target="_blank">CV</a>
+      </div>
+    </aside>
 
-      <nav class="sidebar-nav">
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#teaching">Teaching & Mentoring</a>
-      </nav>
-
-      <a href="mailto:kaili.2001@hotmail.de">Email</a>
-      <!-- <a href="https://github.com/SumoPikmin" target="_blank">GitHub</a> -->
-      <a href="https://www.linkedin.com/in/kai-li-cs/" target="_blank">LinkedIn</a>
-      <a href="Kai_CV.pdf" target="_blank">CV</a>
-    </div>
-
-    <!-- Main Content -->
-    <div class="main-content">
+    <!-- Right Main Content -->
+    <main class="main-content">
       <h1 id="about">Kai Li</h1>
+
       <h2>About Me</h2>
       <p>
         I'm a second-year Master's student at the Technical University of Darmstadt specializing in Natural Language Processing and Machine Learning.
@@ -63,7 +70,8 @@
           <p>Guided first-year students through attentive listening and constructive dialogue, and designed and led weekly coaching sessions to promote self-reflection and personal growth.</p>
         </li>
       </ul>
-    </div>
+    </main>
   </div>
+
 </body>
 </html>
