@@ -124,31 +124,27 @@ h2 {
 }
 
 .transparent-link {
-  background: transparent !important; /* override any background */
+  background: transparent !important;
   border: none;
   padding: 0;
   margin: 0;
-  color: rgba(51, 51, 51, 0.6);
+  color: inherit; /* or use rgba(...) for faded text */
   text-decoration: none;
+  box-shadow: none !important;  /* Remove inherited shadow */
+  outline: none;
   transition: color 0.3s ease;
-  outline: none; /* remove default outline */
-  box-shadow: none; /* remove any shadow */
 }
 
-/* Remove blue background on focus and active states */
+.transparent-link:hover,
 .transparent-link:focus,
 .transparent-link:active {
+  box-shadow: none !important;
   background: transparent !important;
-  outline: none;
-  box-shadow: none;
-  color: var(--accent-color); /* keep your hover/focus color */
-  text-decoration: underline;
-}
-
-.transparent-link:hover {
   color: var(--accent-color);
   text-decoration: underline;
+  outline: none;
 }
+
 
 
 
