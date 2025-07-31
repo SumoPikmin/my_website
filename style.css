@@ -124,21 +124,32 @@ h2 {
 }
 
 .transparent-link {
-  background: transparent;  /* no background color */
+  background: transparent !important; /* override any background */
   border: none;
   padding: 0;
   margin: 0;
-  color: rgba(51, 51, 51, 0.6); /* slightly faded version of your body text color (#333) */
+  color: rgba(51, 51, 51, 0.6);
   text-decoration: none;
   transition: color 0.3s ease;
+  outline: none; /* remove default outline */
+  box-shadow: none; /* remove any shadow */
 }
 
-.transparent-link:hover,
-.transparent-link:focus {
-  color: var(--accent-color); /* highlight on hover/focus */
-  outline: none; /* optional, but better for keyboard nav to keep or customize */
-  text-decoration: underline; /* subtle hover cue */
+/* Remove blue background on focus and active states */
+.transparent-link:focus,
+.transparent-link:active {
+  background: transparent !important;
+  outline: none;
+  box-shadow: none;
+  color: var(--accent-color); /* keep your hover/focus color */
+  text-decoration: underline;
 }
+
+.transparent-link:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
 
 
 /* Main Content */
