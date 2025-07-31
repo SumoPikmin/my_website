@@ -124,7 +124,7 @@ h2 {
 }
 
 .transparent-link {
-  background: var(--accent-color);;
+  background:  #f4f4f4;
   border: none;
   padding: 0;
   margin: 0;
